@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hợp đông cho thuê</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="rol-md-5 mx-auto">
+				<div class="col-md-12 text-center">
+					<h1 style="color: blue">Bên cho thuê</h1>
+				</div>
+				<div class="form">
+					<div class="col-md-12">
+						<h3>Thông tin đất cho thuê</h3>
+					</div>
+					<form action="#" method="post">
+						<div class="form-group">
+							<th>Địa chỉ:</th>
+							<input type="text" name="diachidat" id="diachidat" placeholder="Nhập địa chỉ" class="form-control">
+						</div>
+						<div class="form-group">
+							<th>Vị trí:</th>
+							<input type="text" name="vitri" id="vitri" placeholder="Nhập vị trí" class="form-control">
+						</div>
+						<div class="form-group">
+							<th>Loại đất:</th>
+							<input type="text" name="loai" id="loai" placeholder="Nhập loại đất" class="form-control">
+						</div>
+					</form>
+					<div class="col-md-12">
+						<h3>Thông tin hợp đồng</h3>
+					</div>
+					<form action="#" method="post">
+						<div class="form-group" >
+							<th>Thời gian sử dụng:</th>
+							<div class="begin" style="padding-bottom: 3px">
+								<p> Bắt đầu:</p>
+								<input type="date" name="" id="" placeholder="Thời gian bắt đầu" class="form-control">
+							</div>
+							<div class="end">
+								<p> Kết thúc:</p>
+								<input type="date" name="" placeholder="Thời gian kết thúc" class="form-control">
+							</div>
+						</div>
+						<div class="form-group" >
+							<th>Tỉ lệ:</th>
+							<input type="text" name="" id="" placeholder="Tỉ lệ" class="form-control">
+						</div>
+						<div class="form-group" >
+							<th>Chu kỳ thanh toán:</th>
+							<input type="text" name="" id="" placeholder="Thời hạn thanh toán" class="form-control">
+						</div>
+					</form>					
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 20px">
+			<div class="col-md-12"><h4>Quyền và nghĩa vụ:</h4></div>
+			<div class="col-md-6">
+				<div class="title text-center">
+					<h5>Bên cho thuê</h5>
+				</div>
+				<div class="">
+					<div>
+						<h6>Nghĩa vụ:</h6>
+					</div>
+					<form action="#" method="post">
+						<input type="checkbox" name="nv-1"> Giao quyền sử dụng đất  cho bên B theo đúng ngày.<br/>
+						<input type="checkbox" name="nv-2"> Đăng ký việc cho thuê quyền sử dụng đất.<br/>
+						<input type="checkbox" name="nv-3">	Nộp thuế sử dụng đất.<br/>	
+						<input type="checkbox" name="nv-4"> Báo cho bên B về quyền của người thứ ba đối với thửa đất.<br/>
+						<input type="checkbox" name="nv-5">	Chuyển giao đất đúng như đã thỏa thuận.<br/>
+					</form>
+					<div><h6>Quyền:</h6></div>
+					<form action="#" method="post">
+						<input type="checkbox" name="q1">Yêu cầu bên B trả đủ tiền thuê.<br/>
+						<input type="checkbox" name="q2"> Yêu cầu bên B chấm dứt ngay việc sử dụng đất không đúng mục đích, huỷ hoại đất hoặc làm giảm sút giá trị của đất;nếu bên B không chấm dứt hành vi vi phạm, thì bên A có quyền đơn phương đình chỉ hợp đồng, yêu cầu bên B hoàn trả đất và bồi thường thiệt hại<br/>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="title text-center" >
+					<h5>Bên thuê</h5>
+				</div>
+				<div class="">
+					<div>
+						<h6>Nghĩa vụ:</h6>
+					</div>
+					<form action="#" method="post">
+						<input type="checkbox" name="nv-1"> Sử dụng đất đúng mục đích, đúng thời hạn thuê.<br/>
+						<input type="checkbox" name="nv-2"> Không được huỷ hoại, làm giảm sút giá trị sử dụng của đất.<br/>
+						<input type="checkbox" name="nv-3">	Trả đủ tiền thuê theo phương thức đã thoả thuận<br/>	
+						<input type="checkbox" name="nv-4"> Không được cho người khác thuê lại quyền sử dụng đất nếu không được bên A đồng ý bằng văn bản.<br/>
+						<input type="checkbox" name="nv-5">	Trả lại đất sau khi hết thời hạn thuê.<br/>
+					</form>
+					<div><h6>Quyền:</h6></div>
+					<form action="#" method="post">
+						<input type="checkbox" name="q1">Yêu cầu bên A giao thửa đất đúng như đã thoả thuận.<br/>
+						<input type="checkbox" name="q2"> Được sử dụng đất ổn định theo thời hạn thuê đã thoả thuận.<br/>
+						<input type="checkbox" name="q2"> Được hưởng hoa lợi, lợi tức từ việc sử dụng đất.<br/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 text-center" style="margin: auto; margin-top: 40px">
+			<button type="submit" class=" btn btn-block btn-primary tx-tfm">Gửi</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thông báo</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="./bootstrap/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<style>
+		#btn-notification {
+			cursor: pointer;
+			position: relative;
+		}
+		.has-unread::after {
+			content: '.';
+			/*display: block;*/
+			/*background-color: red;*/
+			color: tomato;
+			font-size: 70px;
+			position: absolute;
+			z-index: 10;
+			top: -73px;
+    		left: 7px;
+    	}
+    	.dropdown-menu {
+    		width: 300px;
+		    /* right: 0px; */
+		    /* right: 100px; */
+		    /* top: 50px; */
+		    left: -800%;
+		    padding-top: 0px;
+		    padding-bottom: 0px;
+		    font-size: 0.9em;
+			/*top: 30px;*/
+		}
+		.dropdown-title, .dropdown-title:hover {
+			background-color: #eee;
+			padding: 5px 20px !important;
+		}
+		.dropdown-title {
+			padding: 5px 20px !important;
+		}
+		.dropdown-item {
+			border-bottom: 1px solid #ddd;
+			padding: 15px 20px;
+			white-space: normal;
+		}
+		.dropdown-item .unread {
+			background-color: rgb(248, 249, 250);
+		}
+		.body {
+			background-color: #eee;
+			min-height: 100vh;
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar bg-dark text-white navbar-expand-lg">
+		<div class="container">
+			<ul class="navbar-nav">
+		      	<li class="nav-item active">
+		        	<h4>SMART CONTRACT</h4>
+		      	</li>
+		    </ul>
+		    
+			    <ul class="navbar-nav nav-right">
+			    	<div class="navbar-collapse">
+				    	<li  id="btn-notification" class="nav-item active has-unread">
+				    		<div class="dropdown">
+							  <div class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <i class="fas fa-bell"></i>
+
+							  </div>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    <a class="dropdown-item dropdown-title" href="#">Thông báo</a>
+							    <a class="dropdown-item bg-info text-white" href="#"><b>Phạm Quang Điều</b> đã đề nghị thay đổi tỉ lệ hợp đồng&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item" href="#"><b>Mẫn Đức Trọng Hiếu</b> đã bày tỏ cảm xúc về hợp đồng giữa bạn và Điều&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item" href="#"><b>Bạch Mai Linh</b> đã bình luận về hợp đồng giữa bạn và Điều&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item dropdown-title text-center" href="./notification.html">Xem toàn bộ</a>
+							  </div>
+							</div>
+				        	
+				      	</li>
+				      	<li class="nav-item active">
+				        	&emsp;Đinh Mạnh Hùng
+				      	</li>
+				      	<li class="nav-item active">
+				        	&emsp;<i class="fas fa-sign-out-alt"></i>
+				      	</li>
+			      	</div>
+			    </ul>
+			
+		</div>
+	</nav>
+	<div class="body">
+		<div class="container">
+			<div class="card" style="width: 100%">
+			  <div class="card-header">
+			    <img src="./images/Ripple-1s-39px.svg">&ensp;Thông báo chưa đọc
+			  </div>
+			  <div class="card-body">
+			    <h5 class="card-title"><b>Phạm Quang Điều</b> đã đề nghị đổi tỉ lệ từ 1/9 lên 5/5</h5>
+			    <h6 class="card-subtitle mb-2 text-muted">18:58 19/8/2018</h6>
+			    <p class="card-text">Lí do: Chú mày ăn cái gì mà chia khôn thế</p>
+			    <a href="#" class="card-link">Chi tiết</a>
+			  </div>
+			</div>
+
+			<div class="card mt-3" style="width: 100%">
+			  <div class="card-header">
+			    Thông báo đã đọc
+			  </div>
+			  <div class="card-body">
+			    <h5 class="card-title"><b>Mẫn Đức Trọng Hiếu</b> đã bày tỏ cảm xúc về hợp đồng giữa bạn và Điều</h5>
+			    <h6 class="card-subtitle mb-2 text-muted">18:58 19/8/2018</h6>
+			    <p class="card-text">Haha</p>
+			    <a href="#" class="card-link">Chi tiết</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi tiết</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="./bootstrap/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<style>
+		#btn-notification {
+			cursor: pointer;
+			position: relative;
+		}
+		.has-unread::after {
+			content: '.';
+			/*display: block;*/
+			/*background-color: red;*/
+			color: tomato;
+			font-size: 70px;
+			position: absolute;
+			z-index: 10;
+			top: -73px;
+    		left: 7px;
+    	}
+    	.dropdown-menu {
+    		width: 300px;
+		    /* right: 0px; */
+		    /* right: 100px; */
+		    /* top: 50px; */
+		    left: -800%;
+		    padding-top: 0px;
+		    padding-bottom: 0px;
+		    font-size: 0.9em;
+			/*top: 30px;*/
+		}
+		.dropdown-title, .dropdown-title:hover {
+			background-color: #eee;
+			padding: 5px 20px !important;
+		}
+		.dropdown-title {
+			padding: 5px 20px !important;
+		}
+		.dropdown-item {
+			border-bottom: 1px solid #ddd;
+			padding: 15px 20px;
+			white-space: normal;
+		}
+		.dropdown-item .unread {
+			background-color: rgb(248, 249, 250);
+		}
+		.body {
+			background-color: #eee;
+			min-height: 100vh;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar bg-dark text-white navbar-expand-lg">
+		<div class="container">
+			<ul class="navbar-nav">
+		      	<li class="nav-item active">
+		        	<h4>SMART CONTRACT</h4>
+		      	</li>
+		    </ul>
+		    
+			    <ul class="navbar-nav nav-right">
+			    	<div class="navbar-collapse">
+				    	<li  id="btn-notification" class="nav-item active has-unread">
+				    		<div class="dropdown">
+							  <div class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <i class="fas fa-bell"></i>
+
+							  </div>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    <a class="dropdown-item dropdown-title" href="#">Thông báo</a>
+							    <a class="dropdown-item bg-info text-white" href="#"><b>Phạm Quang Điều</b> đã đề nghị thay đổi tỉ lệ hợp đồng&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item" href="#"><b>Mẫn Đức Trọng Hiếu</b> đã bày tỏ cảm xúc về hợp đồng giữa bạn và Điều&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item" href="#"><b>Bạch Mai Linh</b> đã bình luận về hợp đồng giữa bạn và Điều&ensp;<i class="fas fa-external-link-alt"></i></a>
+							    <a class="dropdown-item dropdown-title text-center" href="./notification.html">Xem toàn bộ</a>
+							  </div>
+							</div>
+				        	
+				      	</li>
+				      	<li class="nav-item active">
+				        	&emsp;Đinh Mạnh Hùng
+				      	</li>
+				      	<li class="nav-item active">
+				        	&emsp;<i class="fas fa-sign-out-alt"></i>
+				      	</li>
+			      	</div>
+			    </ul>
+			
+		</div>
+	</nav>
+	<div class="body">
+		<div class="container">
+			<div class="card" style="width: 100%">
+			  
+			  <div class="card-body">
+			    <h5 class="card-title text-center">Thông tin chi tiết hợp đồng</h5>
+			    <hr>
+			    <div class="row">
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Thông tin bên A</div><br>
+			    		<div class="row">
+			    			<div class="col-md-3">Họ tên</div>
+			    			<div class="col-md-9">Đinh Mạnh Hùng</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">CMND</div>
+			    			<div class="col-md-9">1458914xx</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Số điện thaoij</div>
+			    			<div class="col-md-9">0321.113</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Và</div>
+			    			<div class="col-md-9">Nhiều thông tin khác</div>
+			    		</div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Thông tin bên B</div><br>
+			    		<div class="row">
+			    			<div class="col-md-3">Họ tên</div>
+			    			<div class="col-md-9">Phạm Quang Điều</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">CMND</div>
+			    			<div class="col-md-9">1458914xx</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Số điện thaoij</div>
+			    			<div class="col-md-9">0321.113</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Và</div>
+			    			<div class="col-md-9">Nhiều thông tin khác</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <hr>
+			    <div class="row">
+			    	<div class="col-sm-3"></div>
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Thông tin chi tiết mảnh đất</div>
+			    		<br>
+			    		<div class="row">
+			    			<div class="col-md-3">Diện tich</div>
+			    			<div class="col-md-9">1m2</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Mô tả</div>
+			    			<div class="col-md-9">Nơi đây đã từng chứng kiến những chiến công vang dội của quân đội nhân dân Việt Nam chống lại đế quốc Pháp và Mĩ</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Loại đất</div>
+			    			<div class="col-md-9">Đất chó ăn đá gà ăn sỏi</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <hr>
+			    <div class="row">
+			    	<div class="col-sm-3"></div>
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Điều kiện hợp đồng</div>
+			    		<br>
+			    		<div class="row">
+			    			<div class="col-md-3">Ngày thue</div>
+			    			<div class="col-md-9">6/9/2016</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Ngày trả</div>
+			    			<div class="col-md-9">9/6/2019</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-md-3">Chu kì thanh toán</div>
+			    			<div class="col-md-9">69 ngày</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <hr>
+			    <div class="text-center">Các điều khoản</div><br>
+			    <div class="row">
+			    	
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Bên A</div><br>
+			    		Nghĩa vụ:<br>
+			    		<ol>
+ <li>Giao quyền sử dụng đất cho bên B theo đúng ngày.</li>
+ <li>Đăng ký việc cho thuê quyền sử dụng đất.</li>
+	<li>Nộp thuế sử dụng đất.</li>
+ <li>Báo cho bên B về quyền của người thứ ba đối với thửa đất.</li>
+	<li>Chuyển giao đất đúng như đã thỏa thuận.</li>
+	</ol>
+Quyền:<br><ol>
+<li>Yêu cầu bên B trả đủ tiền thuê.</li>
+ <li>Yêu cầu bên B chấm dứt ngay việc sử dụng đất không đúng mục đích, huỷ hoại đất hoặc làm giảm sút giá trị của đất;nếu bên B không chấm dứt hành vi vi phạm, thì bên A có quyền đơn phương đình chỉ hợp đồng, yêu cầu bên B hoàn trả đất và bồi thường thiệt hại</li></ol>
+			    	</div>
+			    	
+			    	<div class="col-sm-6">
+			    		<div class="text-center">Bên A</div><br>
+			    		Nghĩa vụ:<br>
+			    		<ol>
+ <li>Giao quyền sử dụng đất cho bên B theo đúng ngày.</li>
+ <li>Đăng ký việc cho thuê quyền sử dụng đất.</li>
+	<li>Nộp thuế sử dụng đất.</li>
+ <li>Báo cho bên B về quyền của người thứ ba đối với thửa đất.</li>
+	<li>Chuyển giao đất đúng như đã thỏa thuận.</li>
+	</ol>
+Quyền:<br><ol>
+<li>Yêu cầu bên B trả đủ tiền thuê.</li>
+ <li>Yêu cầu bên B chấm dứt ngay việc sử dụng đất không đúng mục đích, huỷ hoại đất hoặc làm giảm sút giá trị của đất;nếu bên B không chấm dứt hành vi vi phạm, thì bên A có quyền đơn phương đình chỉ hợp đồng, yêu cầu bên B hoàn trả đất và bồi thường thiệt hại</li></ol>
+			    	</div>
+			    	
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
